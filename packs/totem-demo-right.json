@@ -1,7 +1,7 @@
 {
   "schema": "v1",
   "enabled": true,
-  "name": "totem-demo",
+  "name": "totem-demo-right",
   "anchor": {
     "Screen": "Center"
   },
@@ -138,7 +138,7 @@
         },
         {
           "enabled": true,
-          "name": "trait:lead-attacks",
+          "name": "pinned",
           "anchor": "Parent",
           "pos": [
             0.0,
@@ -147,11 +147,7 @@
           "opacity": 1.0,
           "trigger": {
             "source": {
-              "type": "Buff",
-              "combatant": "Player",
-              "ids": [
-                34659
-              ]
+              "type": "Inherit"
             },
             "threshold": {
               "threshold_type": "Always",
@@ -177,7 +173,7 @@
           "members": [
             {
               "enabled": true,
-              "name": "max",
+              "name": "trait:lead-attacks",
               "anchor": "Parent",
               "pos": [
                 0.0,
@@ -186,70 +182,11 @@
               "opacity": 1.0,
               "trigger": {
                 "source": {
-                  "type": "Inherit"
-                },
-                "threshold": {
-                  "threshold_type": {
-                    "Above": 15.0
-                  },
-                  "amount_type": "Intensity"
-                }
-              },
-              "filter": {
-                "player": {
-                  "combat": null,
-                  "specs": [],
-                  "weapons": [],
-                  "traits": [],
-                  "mounts": []
-                },
-                "map": {
-                  "category": [],
-                  "whitelist": true,
-                  "ids": []
-                }
-              },
-              "animation": null,
-              "type": "Icon",
-              "icon": {
-                "File": "totem\\right\\glow-a.png"
-              },
-              "tint": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
-              ],
-              "zoom": 1.0,
-              "round": 0.0,
-              "border_size": 0.0,
-              "border_color": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "conditions": [],
-              "duration_bar": false,
-              "duration_text": false,
-              "stacks_text": false,
-              "size": [
-                52.0,
-                104.0
-              ]
-            },
-            {
-              "enabled": true,
-              "name": "frame",
-              "anchor": "Parent",
-              "pos": [
-                0.0,
-                0.0
-              ],
-              "opacity": 1.0,
-              "trigger": {
-                "source": {
-                  "type": "Inherit"
+                  "type": "Buff",
+                  "combatant": "Player",
+                  "ids": [
+                    34659
+                  ]
                 },
                 "threshold": {
                   "threshold_type": "Always",
@@ -271,355 +208,455 @@
                 }
               },
               "animation": null,
-              "type": "Icon",
-              "icon": {
-                "File": "totem\\right\\totem-frame.png"
-              },
-              "tint": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
-              ],
-              "zoom": 1.0,
-              "round": 0.0,
-              "border_size": 0.0,
-              "border_color": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "conditions": [],
-              "duration_bar": false,
-              "duration_text": false,
-              "stacks_text": false,
-              "size": [
-                52.0,
-                44.0
-              ]
-            },
-            {
-              "enabled": true,
-              "name": "trait",
-              "anchor": "Parent",
-              "pos": [
-                0.0,
-                0.0
-              ],
-              "opacity": 1.0,
-              "trigger": {
-                "source": {
-                  "type": "Inherit"
-                },
-                "threshold": {
-                  "threshold_type": "Always",
-                  "amount_type": "Intensity"
-                }
-              },
-              "filter": {
-                "player": {
-                  "combat": null,
-                  "specs": [],
-                  "weapons": [],
-                  "traits": [],
-                  "mounts": []
-                },
-                "map": {
-                  "category": [],
-                  "whitelist": true,
-                  "ids": []
-                }
-              },
-              "animation": null,
-              "type": "Icon",
-              "icon": "Automatic",
-              "tint": [
-                1.0,
-                1.0,
-                1.0,
-                0.2509804
-              ],
-              "zoom": 1.0,
-              "round": 0.0,
-              "border_size": 0.0,
-              "border_color": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "conditions": [
+              "type": "Group",
+              "members": [
                 {
+                  "enabled": true,
+                  "name": "max",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
                   "trigger": {
-                    "ProgressThreshold": {
+                    "source": {
+                      "type": "Inherit"
+                    },
+                    "threshold": {
+                      "threshold_type": {
+                        "Above": 15.0
+                      },
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": {
+                    "File": "totem\\right\\glow-a.png"
+                  },
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "size": [
+                    52.0,
+                    104.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "frame",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Inherit"
+                    },
+                    "threshold": {
+                      "threshold_type": "Always",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": {
+                    "File": "totem\\right\\totem-frame.png"
+                  },
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "size": [
+                    52.0,
+                    44.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "trait",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Inherit"
+                    },
+                    "threshold": {
+                      "threshold_type": "Always",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.2509804
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [
+                    {
+                      "trigger": {
+                        "ProgressThreshold": {
+                          "threshold_type": "Present",
+                          "amount_type": "Intensity"
+                        }
+                      },
+                      "properties": {
+                        "tint": [
+                          1.0,
+                          1.0,
+                          1.0,
+                          1.0
+                        ],
+                        "zoom": null,
+                        "round": null,
+                        "border_size": null,
+                        "border_color": null
+                      }
+                    }
+                  ],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                }
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "trait:bounding-dodger",
+              "anchor": "Parent",
+              "pos": [
+                52.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "source": {
+                  "type": "Buff",
+                  "combatant": "Player",
+                  "ids": [
+                    33162
+                  ]
+                },
+                "threshold": {
+                  "threshold_type": "Always",
+                  "amount_type": "Intensity"
+                }
+              },
+              "filter": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "weapons": [],
+                  "traits": [],
+                  "mounts": []
+                },
+                "map": {
+                  "category": [],
+                  "whitelist": true,
+                  "ids": []
+                }
+              },
+              "animation": null,
+              "type": "Group",
+              "members": [
+                {
+                  "enabled": true,
+                  "name": "max",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Inherit"
+                    },
+                    "threshold": {
                       "threshold_type": "Present",
                       "amount_type": "Intensity"
                     }
                   },
-                  "properties": {
-                    "tint": [
-                      1.0,
-                      1.0,
-                      1.0,
-                      1.0
-                    ],
-                    "zoom": null,
-                    "round": null,
-                    "border_size": null,
-                    "border_color": null
-                  }
-                }
-              ],
-              "duration_bar": true,
-              "duration_text": false,
-              "stacks_text": true,
-              "size": [
-                32.0,
-                32.0
-              ]
-            }
-          ]
-        },
-        {
-          "enabled": true,
-          "name": "trait:bounding-dodger",
-          "anchor": "Parent",
-          "pos": [
-            52.0,
-            0.0
-          ],
-          "opacity": 1.0,
-          "trigger": {
-            "source": {
-              "type": "Buff",
-              "combatant": "Player",
-              "ids": [
-                33162
-              ]
-            },
-            "threshold": {
-              "threshold_type": "Always",
-              "amount_type": "Intensity"
-            }
-          },
-          "filter": {
-            "player": {
-              "combat": null,
-              "specs": [],
-              "weapons": [],
-              "traits": [],
-              "mounts": []
-            },
-            "map": {
-              "category": [],
-              "whitelist": true,
-              "ids": []
-            }
-          },
-          "animation": null,
-          "type": "Group",
-          "members": [
-            {
-              "enabled": true,
-              "name": "max",
-              "anchor": "Parent",
-              "pos": [
-                0.0,
-                0.0
-              ],
-              "opacity": 1.0,
-              "trigger": {
-                "source": {
-                  "type": "Inherit"
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": {
+                    "File": "totem\\right\\glow-a.png"
+                  },
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "size": [
+                    52.0,
+                    104.0
+                  ]
                 },
-                "threshold": {
-                  "threshold_type": "Present",
-                  "amount_type": "Intensity"
-                }
-              },
-              "filter": {
-                "player": {
-                  "combat": null,
-                  "specs": [],
-                  "weapons": [],
-                  "traits": [],
-                  "mounts": []
-                },
-                "map": {
-                  "category": [],
-                  "whitelist": true,
-                  "ids": []
-                }
-              },
-              "animation": null,
-              "type": "Icon",
-              "icon": {
-                "File": "totem\\right\\glow-a.png"
-              },
-              "tint": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
-              ],
-              "zoom": 1.0,
-              "round": 0.0,
-              "border_size": 0.0,
-              "border_color": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "conditions": [],
-              "duration_bar": false,
-              "duration_text": false,
-              "stacks_text": false,
-              "size": [
-                52.0,
-                104.0
-              ]
-            },
-            {
-              "enabled": true,
-              "name": "frame",
-              "anchor": "Parent",
-              "pos": [
-                0.0,
-                0.0
-              ],
-              "opacity": 1.0,
-              "trigger": {
-                "source": {
-                  "type": "Inherit"
-                },
-                "threshold": {
-                  "threshold_type": "Always",
-                  "amount_type": "Intensity"
-                }
-              },
-              "filter": {
-                "player": {
-                  "combat": null,
-                  "specs": [],
-                  "weapons": [],
-                  "traits": [],
-                  "mounts": []
-                },
-                "map": {
-                  "category": [],
-                  "whitelist": true,
-                  "ids": []
-                }
-              },
-              "animation": null,
-              "type": "Icon",
-              "icon": {
-                "File": "totem\\right\\totem-frame.png"
-              },
-              "tint": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
-              ],
-              "zoom": 1.0,
-              "round": 0.0,
-              "border_size": 0.0,
-              "border_color": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "conditions": [],
-              "duration_bar": false,
-              "duration_text": false,
-              "stacks_text": false,
-              "size": [
-                52.0,
-                44.0
-              ]
-            },
-            {
-              "enabled": true,
-              "name": "trait",
-              "anchor": "Parent",
-              "pos": [
-                0.0,
-                0.0
-              ],
-              "opacity": 1.0,
-              "trigger": {
-                "source": {
-                  "type": "Inherit"
-                },
-                "threshold": {
-                  "threshold_type": "Always",
-                  "amount_type": "Intensity"
-                }
-              },
-              "filter": {
-                "player": {
-                  "combat": null,
-                  "specs": [],
-                  "weapons": [],
-                  "traits": [],
-                  "mounts": []
-                },
-                "map": {
-                  "category": [],
-                  "whitelist": true,
-                  "ids": []
-                }
-              },
-              "animation": null,
-              "type": "Icon",
-              "icon": "Automatic",
-              "tint": [
-                1.0,
-                1.0,
-                1.0,
-                0.2509804
-              ],
-              "zoom": 1.0,
-              "round": 0.0,
-              "border_size": 0.0,
-              "border_color": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ],
-              "conditions": [
                 {
+                  "enabled": true,
+                  "name": "frame",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
                   "trigger": {
-                    "ProgressThreshold": {
-                      "threshold_type": "Present",
+                    "source": {
+                      "type": "Inherit"
+                    },
+                    "threshold": {
+                      "threshold_type": "Always",
                       "amount_type": "Intensity"
                     }
                   },
-                  "properties": {
-                    "tint": [
-                      1.0,
-                      1.0,
-                      1.0,
-                      1.0
-                    ],
-                    "zoom": null,
-                    "round": null,
-                    "border_size": null,
-                    "border_color": null
-                  }
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": {
+                    "File": "totem\\right\\totem-frame.png"
+                  },
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [],
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "size": [
+                    52.0,
+                    44.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "trait",
+                  "anchor": "Parent",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "source": {
+                      "type": "Inherit"
+                    },
+                    "threshold": {
+                      "threshold_type": "Always",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "icon": "Automatic",
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.2509804
+                  ],
+                  "zoom": 1.0,
+                  "round": 0.0,
+                  "border_size": 0.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "conditions": [
+                    {
+                      "trigger": {
+                        "ProgressThreshold": {
+                          "threshold_type": "Present",
+                          "amount_type": "Intensity"
+                        }
+                      },
+                      "properties": {
+                        "tint": [
+                          1.0,
+                          1.0,
+                          1.0,
+                          1.0
+                        ],
+                        "zoom": null,
+                        "round": null,
+                        "border_size": null,
+                        "border_color": null
+                      }
+                    }
+                  ],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true,
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
                 }
-              ],
-              "duration_bar": true,
-              "duration_text": false,
-              "stacks_text": true,
-              "size": [
-                32.0,
-                32.0
               ]
             }
           ]
@@ -783,7 +820,7 @@
             },
             {
               "enabled": true,
-              "name": "rest",
+              "name": "rest-list",
               "anchor": "Parent",
               "pos": [
                 32.0,
