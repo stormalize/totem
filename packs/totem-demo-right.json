@@ -1,15 +1,15 @@
 {
   "schema": "v1",
   "enabled": true,
-  "name": "totem-demo-right",
+  "name": "totem demo: generic buffs (right)",
   "anchor": {
     "Screen": "Center"
   },
   "pos": [
-    250.0,
-    350.0
+    250,
+    350
   ],
-  "opacity": 1.0,
+  "opacity": 1,
   "trigger": {
     "source": {
       "type": "Inherit"
@@ -21,7 +21,7 @@
   },
   "filter": {
     "player": {
-      "combat": null,
+      "combat": true,
       "specs": [],
       "weapons": [],
       "traits": [],
@@ -45,10 +45,10 @@
       "name": "traits",
       "anchor": "Parent",
       "pos": [
-        0.0,
-        0.0
+        0,
+        0
       ],
-      "opacity": 1.0,
+      "opacity": 1,
       "trigger": {
         "source": {
           "type": "Always"
@@ -80,10 +80,10 @@
           "name": "start",
           "anchor": "Parent",
           "pos": [
-            -38.0,
-            0.0
+            -38,
+            0
           ],
-          "opacity": 1.0,
+          "opacity": 1,
           "trigger": {
             "source": {
               "type": "Inherit"
@@ -113,27 +113,27 @@
             "File": "totem\\right\\totem-start.png"
           },
           "tint": [
-            1.0,
-            1.0,
-            1.0,
-            1.0
+            1,
+            1,
+            1,
+            1
           ],
-          "zoom": 1.0,
-          "round": 0.0,
-          "border_size": 0.0,
+          "zoom": 1,
+          "round": 0,
+          "border_size": 0,
           "border_color": [
-            0.0,
-            0.0,
-            0.0,
-            1.0
+            0,
+            0,
+            0,
+            1
           ],
           "conditions": [],
           "duration_bar": false,
           "duration_text": false,
           "stacks_text": false,
           "size": [
-            24.0,
-            44.0
+            24,
+            44
           ]
         },
         {
@@ -141,10 +141,10 @@
           "name": "pinned",
           "anchor": "Parent",
           "pos": [
-            0.0,
-            0.0
+            0,
+            0
           ],
-          "opacity": 1.0,
+          "opacity": 1,
           "trigger": {
             "source": {
               "type": "Inherit"
@@ -173,19 +173,19 @@
           "members": [
             {
               "enabled": true,
-              "name": "trait:lead-attacks",
+              "name": "Boon: Quickness",
               "anchor": "Parent",
               "pos": [
-                0.0,
-                0.0
+                0,
+                0
               ],
-              "opacity": 1.0,
+              "opacity": 1,
               "trigger": {
                 "source": {
                   "type": "Buff",
                   "combatant": "Player",
                   "ids": [
-                    34659
+                    1187
                   ]
                 },
                 "threshold": {
@@ -215,17 +215,17 @@
                   "name": "max",
                   "anchor": "Parent",
                   "pos": [
-                    0.0,
-                    0.0
+                    0,
+                    0
                   ],
-                  "opacity": 1.0,
+                  "opacity": 1,
                   "trigger": {
                     "source": {
                       "type": "Inherit"
                     },
                     "threshold": {
                       "threshold_type": {
-                        "Above": 15.0
+                        "Above": 1
                       },
                       "amount_type": "Intensity"
                     }
@@ -250,27 +250,27 @@
                     "File": "totem\\right\\glow-a.png"
                   },
                   "tint": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
-                  "zoom": 1.0,
-                  "round": 0.0,
-                  "border_size": 0.0,
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
                   "border_color": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "conditions": [],
                   "duration_bar": false,
                   "duration_text": false,
                   "stacks_text": false,
                   "size": [
-                    52.0,
-                    104.0
+                    52,
+                    104
                   ]
                 },
                 {
@@ -278,10 +278,10 @@
                   "name": "frame",
                   "anchor": "Parent",
                   "pos": [
-                    0.0,
-                    0.0
+                    0,
+                    0
                   ],
-                  "opacity": 1.0,
+                  "opacity": 1,
                   "trigger": {
                     "source": {
                       "type": "Inherit"
@@ -311,27 +311,27 @@
                     "File": "totem\\right\\totem-frame.png"
                   },
                   "tint": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
-                  "zoom": 1.0,
-                  "round": 0.0,
-                  "border_size": 0.0,
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
                   "border_color": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "conditions": [],
                   "duration_bar": false,
                   "duration_text": false,
                   "stacks_text": false,
                   "size": [
-                    52.0,
-                    44.0
+                    52,
+                    44
                   ]
                 },
                 {
@@ -339,10 +339,10 @@
                   "name": "trait",
                   "anchor": "Parent",
                   "pos": [
-                    0.0,
-                    0.0
+                    0,
+                    0
                   ],
-                  "opacity": 1.0,
+                  "opacity": 1,
                   "trigger": {
                     "source": {
                       "type": "Inherit"
@@ -370,19 +370,19 @@
                   "type": "Icon",
                   "icon": "Automatic",
                   "tint": [
-                    1.0,
-                    1.0,
-                    1.0,
+                    1,
+                    1,
+                    1,
                     0.2509804
                   ],
-                  "zoom": 1.0,
-                  "round": 0.0,
-                  "border_size": 0.0,
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
                   "border_color": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "conditions": [
                     {
@@ -394,10 +394,10 @@
                       },
                       "properties": {
                         "tint": [
-                          1.0,
-                          1.0,
-                          1.0,
-                          1.0
+                          1,
+                          1,
+                          1,
+                          1
                         ],
                         "zoom": null,
                         "round": null,
@@ -410,27 +410,27 @@
                   "duration_text": false,
                   "stacks_text": true,
                   "size": [
-                    32.0,
-                    32.0
+                    32,
+                    32
                   ]
                 }
               ]
             },
             {
               "enabled": true,
-              "name": "trait:bounding-dodger",
+              "name": "Common: Superspeed",
               "anchor": "Parent",
               "pos": [
-                52.0,
-                0.0
+                52,
+                0
               ],
-              "opacity": 1.0,
+              "opacity": 1,
               "trigger": {
                 "source": {
                   "type": "Buff",
                   "combatant": "Player",
                   "ids": [
-                    33162
+                    5974
                   ]
                 },
                 "threshold": {
@@ -460,16 +460,18 @@
                   "name": "max",
                   "anchor": "Parent",
                   "pos": [
-                    0.0,
-                    0.0
+                    0,
+                    0
                   ],
-                  "opacity": 1.0,
+                  "opacity": 1,
                   "trigger": {
                     "source": {
                       "type": "Inherit"
                     },
                     "threshold": {
-                      "threshold_type": "Present",
+                      "threshold_type": {
+                        "Above": 1
+                      },
                       "amount_type": "Intensity"
                     }
                   },
@@ -493,27 +495,27 @@
                     "File": "totem\\right\\glow-a.png"
                   },
                   "tint": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
-                  "zoom": 1.0,
-                  "round": 0.0,
-                  "border_size": 0.0,
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
                   "border_color": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "conditions": [],
                   "duration_bar": false,
                   "duration_text": false,
                   "stacks_text": false,
                   "size": [
-                    52.0,
-                    104.0
+                    52,
+                    104
                   ]
                 },
                 {
@@ -521,10 +523,10 @@
                   "name": "frame",
                   "anchor": "Parent",
                   "pos": [
-                    0.0,
-                    0.0
+                    0,
+                    0
                   ],
-                  "opacity": 1.0,
+                  "opacity": 1,
                   "trigger": {
                     "source": {
                       "type": "Inherit"
@@ -554,27 +556,27 @@
                     "File": "totem\\right\\totem-frame.png"
                   },
                   "tint": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
-                  "zoom": 1.0,
-                  "round": 0.0,
-                  "border_size": 0.0,
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
                   "border_color": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "conditions": [],
                   "duration_bar": false,
                   "duration_text": false,
                   "stacks_text": false,
                   "size": [
-                    52.0,
-                    44.0
+                    52,
+                    44
                   ]
                 },
                 {
@@ -582,10 +584,10 @@
                   "name": "trait",
                   "anchor": "Parent",
                   "pos": [
-                    0.0,
-                    0.0
+                    0,
+                    0
                   ],
-                  "opacity": 1.0,
+                  "opacity": 1,
                   "trigger": {
                     "source": {
                       "type": "Inherit"
@@ -613,19 +615,19 @@
                   "type": "Icon",
                   "icon": "Automatic",
                   "tint": [
-                    1.0,
-                    1.0,
-                    1.0,
+                    1,
+                    1,
+                    1,
                     0.2509804
                   ],
-                  "zoom": 1.0,
-                  "round": 0.0,
-                  "border_size": 0.0,
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
                   "border_color": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "conditions": [
                     {
@@ -637,10 +639,10 @@
                       },
                       "properties": {
                         "tint": [
-                          1.0,
-                          1.0,
-                          1.0,
-                          1.0
+                          1,
+                          1,
+                          1,
+                          1
                         ],
                         "zoom": null,
                         "round": null,
@@ -653,8 +655,8 @@
                   "duration_text": false,
                   "stacks_text": true,
                   "size": [
-                    32.0,
-                    32.0
+                    32,
+                    32
                   ]
                 }
               ]
@@ -666,10 +668,10 @@
           "name": "end",
           "anchor": "Parent",
           "pos": [
-            78.0,
-            0.0
+            78,
+            0
           ],
-          "opacity": 1.0,
+          "opacity": 1,
           "trigger": {
             "source": {
               "type": "Inherit"
@@ -701,10 +703,10 @@
               "name": "end",
               "anchor": "Parent",
               "pos": [
-                6.0,
-                0.0
+                6,
+                0
               ],
-              "opacity": 1.0,
+              "opacity": 1,
               "trigger": {
                 "source": {
                   "type": "Inherit"
@@ -734,27 +736,27 @@
                 "File": "totem\\right\\totem-end.png"
               },
               "tint": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
+                1,
+                1,
+                1,
+                1
               ],
-              "zoom": 1.0,
-              "round": 0.0,
-              "border_size": 0.0,
+              "zoom": 1,
+              "round": 0,
+              "border_size": 0,
               "border_color": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
+                0,
+                0,
+                0,
+                1
               ],
               "conditions": [],
               "duration_bar": false,
               "duration_text": false,
               "stacks_text": false,
               "size": [
-                12.0,
-                44.0
+                12,
+                44
               ]
             },
             {
@@ -762,10 +764,10 @@
               "name": "rest",
               "anchor": "Parent",
               "pos": [
-                24.0,
-                0.0
+                24,
+                0
               ],
-              "opacity": 1.0,
+              "opacity": 1,
               "trigger": {
                 "source": {
                   "type": "Inherit"
@@ -795,27 +797,27 @@
                 "File": "totem\\right\\totem-rest.png"
               },
               "tint": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
+                1,
+                1,
+                1,
+                1
               ],
-              "zoom": 1.0,
-              "round": 0.0,
-              "border_size": 0.0,
+              "zoom": 1,
+              "round": 0,
+              "border_size": 0,
               "border_color": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
+                0,
+                0,
+                0,
+                1
               ],
               "conditions": [],
               "duration_bar": false,
               "duration_text": false,
               "stacks_text": false,
               "size": [
-                48.0,
-                44.0
+                48,
+                44
               ]
             },
             {
@@ -823,10 +825,10 @@
               "name": "rest-list",
               "anchor": "Parent",
               "pos": [
-                32.0,
-                0.0
+                32,
+                0
               ],
-              "opacity": 1.0,
+              "opacity": 1,
               "trigger": {
                 "source": {
                   "type": "Inherit"
@@ -855,20 +857,20 @@
               "layout": "Dynamic",
               "direction": "Right",
               "size": [
-                32.0,
-                32.0
+                32,
+                32
               ],
-              "pad": 4.0,
+              "pad": 4,
               "icons": [
                 {
                   "enabled": true,
-                  "name": "instant-reflexes",
+                  "name": "Boon: Vigor",
                   "trigger": {
                     "source": {
                       "type": "Buff",
                       "combatant": "Player",
                       "ids": [
-                        34283
+                        726
                       ]
                     },
                     "threshold": {
@@ -892,34 +894,34 @@
                   },
                   "icon": "Automatic",
                   "tint": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
-                  "zoom": 1.0,
-                  "round": 0.0,
-                  "border_size": 0.0,
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
                   "border_color": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "conditions": [],
                   "duration_bar": true,
                   "duration_text": false,
-                  "stacks_text": false
+                  "stacks_text": true
                 },
                 {
                   "enabled": true,
-                  "name": "fluid-strikes",
+                  "name": "Common: Chaos Aura",
                   "trigger": {
                     "source": {
                       "type": "Buff",
                       "combatant": "Player",
                       "ids": [
-                        69291
+                        10332
                       ]
                     },
                     "threshold": {
@@ -943,24 +945,433 @@
                   },
                   "icon": "Automatic",
                   "tint": [
-                    1.0,
-                    1.0,
-                    1.0,
-                    1.0
+                    1,
+                    1,
+                    1,
+                    1
                   ],
-                  "zoom": 1.0,
-                  "round": 0.0,
-                  "border_size": 0.0,
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
                   "border_color": [
-                    0.0,
-                    0.0,
-                    0.0,
-                    1.0
+                    0,
+                    0,
+                    0,
+                    1
                   ],
                   "conditions": [],
                   "duration_bar": true,
                   "duration_text": false,
-                  "stacks_text": false
+                  "stacks_text": true
+                },
+                {
+                  "enabled": true,
+                  "name": "Common: Dark Aura",
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        39978
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "icon": "Automatic",
+                  "tint": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
+                  "border_color": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true
+                },
+                {
+                  "enabled": true,
+                  "name": "Common: Fire Aura",
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        5677
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "icon": "Automatic",
+                  "tint": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
+                  "border_color": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true
+                },
+                {
+                  "enabled": true,
+                  "name": "Common: Frost Aura",
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        5579
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "icon": "Automatic",
+                  "tint": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
+                  "border_color": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true
+                },
+                {
+                  "enabled": true,
+                  "name": "Common: Light Aura",
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        25518,
+                        68927
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "icon": "Automatic",
+                  "tint": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
+                  "border_color": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true
+                },
+                {
+                  "enabled": true,
+                  "name": "Common: Magnetic Aura",
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        5684
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "icon": "Automatic",
+                  "tint": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
+                  "border_color": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true
+                },
+                {
+                  "enabled": true,
+                  "name": "Common: Shocking Aura",
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        5577
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "icon": "Automatic",
+                  "tint": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
+                  "border_color": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true
+                },
+                {
+                  "enabled": true,
+                  "name": "Condition: Immobile",
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        727
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "icon": "Automatic",
+                  "tint": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
+                  "border_color": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true
+                },
+                {
+                  "enabled": true,
+                  "name": "Condition: Weakness",
+                  "trigger": {
+                    "source": {
+                      "type": "Buff",
+                      "combatant": "Player",
+                      "ids": [
+                        742
+                      ]
+                    },
+                    "threshold": {
+                      "threshold_type": "Present",
+                      "amount_type": "Intensity"
+                    }
+                  },
+                  "filter": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "weapons": [],
+                      "traits": [],
+                      "mounts": []
+                    },
+                    "map": {
+                      "category": [],
+                      "whitelist": true,
+                      "ids": []
+                    }
+                  },
+                  "icon": "Automatic",
+                  "tint": [
+                    1,
+                    1,
+                    1,
+                    1
+                  ],
+                  "zoom": 1,
+                  "round": 0,
+                  "border_size": 0,
+                  "border_color": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "conditions": [],
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": true
                 }
               ]
             }
