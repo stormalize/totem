@@ -6,8 +6,8 @@
     "Screen": "Center"
   },
   "pos": [
-    250,
-    350
+    400,
+    -200
   ],
   "opacity": 1,
   "trigger": {
